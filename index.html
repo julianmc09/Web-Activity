@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Web Activity</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="app">
     <div class="balance">
       <p>Your balance</p>
-    </div>
-    <div class="amount">
-      <p>$ 926.21</p>
+      <div class="amount">
+        <p>$ 926.21</p>
+      </div>
     </div>
 
     <div class="card">
@@ -37,54 +39,80 @@
         <p>Received</p>
       </div>
     </div>
-
     <div class="transaction">
       <div class="transaction-item">
         <div>
-          <div><p>to: Rebecca Moore</p></div>
+          <small class="today-title">Today</small>
+          <div>
+            <p>to: Rebecca Moore</p>
+          </div>
           <small>20 January, 2019</small>
         </div>
-        <span><p>$ 972.00</p></span>
+        <span>
+          <p>$ 972.00</p>
+        </span>
       </div>
       <div class="transaction-item">
         <div>
-          <div><p>to: Franz Ferdinand</p></div>
+          <small class="yesterday-title">Yesterday</small>
+          <div>
+            <p>to: Franz Ferdinand</p>
+          </div>
           <small>19 January, 2019</small>
         </div>
-        <span><p>$ 125.00</p></span>
+        <span>
+          <p>$ 125.00</p>
+        </span>
       </div>
       <div class="transaction-item">
         <div>
-          <div><p>to: John Doe</p></div>
+          <div>
+            <p>to: John Doe</p>
+          </div>
           <small>19 January, 2019</small>
         </div>
-        <span><p>$ 247.50</p></span>
+        <span>
+          <p>$ 247.50</p>
+        </span>
       </div>
     </div>
   </div>
 
-  
+
   <div class="app">
     <h2>Send money</h2>
 
     <div class="tabs">
-      <div class="tab active"><p>Card</p></div>
-      <div class="tab"><p>Bank</p></div>
-    </div>
-
-    <div class="card" style="margin-top: 1rem;">
-      <div class="card-number">**** **** **** 3849</div>
-      <div class="card-details">
-        <div>$ 1,345.56</div>
+      <div class="tab active">
+        <p>Card</p>
+      </div>
+      <div class="tab">
+        <p>Bank</p>
       </div>
     </div>
 
+    <div class="card" style="margin-top: 1rem;">
+      <div class="card-number">
+        <p>**** **** **** 3849</p>
+      </div>
+      <div class="card-details">
+        <div>
+          <p>$ 1,345.56</p>
+        </div>
+      </div>
+    </div>
+    <small class="recipient-title">Recipient</small>
     <div class="recipient">
-      <div class="person active">Franz Ferdinand</div>
-      <div class="person">John Doe</div>
+      <div class="person active">
+        <p>Franz Ferdinand</p>
+      </div>
+      <div class="person">
+        <p>John Doe</p>
+      </div>
     </div>
 
     <div class="send-section">
+      <small class="transaction-title">Transaction details</small>
       <div class="input-group">
         <input type="text" placeholder="$ 120.50" />
       </div>
@@ -96,4 +124,5 @@
   </div>
 
 </body>
+
 </html>

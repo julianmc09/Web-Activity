@@ -74,6 +74,16 @@ body {
     align-items: center;
     padding: 0.5rem 0;
     border-bottom: 1px solid #eee;
+    margin: 10px;
+    
+}
+
+.today-title{
+    color: #555;
+}
+
+.yesterday-title{
+    color: #555;
 }
 
 .transaction-item span {
@@ -85,10 +95,18 @@ body {
     margin-top: 1rem;
 }
 
+.transaction-title{
+    color: #555;
+}
+
 .recipient {
     display: flex;
     gap: 1rem;
     margin: 1rem 0;
+}
+
+.recipient-title{
+    color: #555;
 }
 
 .recipient .person {
@@ -105,6 +123,7 @@ body {
 
 .input-group {
     margin-bottom: 1rem;
+    margin-right: 15px;
 }
 
 input {
